@@ -1,0 +1,4 @@
+activity,principal,minimum_role,reason
+01,learner,roles/viewer,inspect project
+03,learner,roles/bigquery.dataEditor,create training dataset/model
+08,training-sa,roles/aiplatform.user,submit custom job

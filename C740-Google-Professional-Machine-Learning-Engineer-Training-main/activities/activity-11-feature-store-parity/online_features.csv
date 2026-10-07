@@ -1,0 +1,3 @@
+customer_id,feature_time,txn_count_1h,spend_7d,risk_score
+C1,2026-01-01T10:00:00Z,3,122.5,0.31
+C2,2026-01-01T09:20:00Z,6,740.0,0.72

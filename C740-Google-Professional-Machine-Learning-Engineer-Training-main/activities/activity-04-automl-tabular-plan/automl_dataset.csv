@@ -1,0 +1,5 @@
+id,event_time,region,channel,tenure,target,split
+1,2026-01-01,SG,web,4,1,TRAIN
+2,2026-01-02,SG,store,30,0,TRAIN
+3,2026-02-01,MY,web,8,1,VALIDATION
+4,2026-03-01,SG,partner,40,0,TEST

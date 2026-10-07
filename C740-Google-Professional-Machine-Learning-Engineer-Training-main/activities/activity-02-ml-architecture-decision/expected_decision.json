@@ -1,0 +1,4 @@
+{
+  "selected": "automl",
+  "reason": "Strong governed baseline; validate explainability slices before serving."
+}

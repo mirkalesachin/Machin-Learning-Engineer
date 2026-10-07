@@ -1,0 +1,2 @@
+import csv,argparse
+p=argparse.ArgumentParser(); p.add_argument('--input'); p.add_argument('--min-auc',type=float); p.add_argument('--max-cost',type=float); a=p.parse_args(); rows=[r for r in csv.DictReader(open(a.input)) if r['status']=='SUCCEEDED' and float(r['val_auc'])>=a.min_auc and float(r['cost'])<=a.max_cost]; print(max(rows,key=lambda r:float(r['val_auc'])) if rows else 'NO ELIGIBLE TRIAL')

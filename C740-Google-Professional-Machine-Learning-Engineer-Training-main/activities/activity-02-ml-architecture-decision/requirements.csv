@@ -1,0 +1,6 @@
+requirement,value,unit,priority
+peak_qps,120,requests_per_second,must
+p95_latency,300,ms,must
+availability,99.9,percent,must
+data_volume,40,TB,context
+explainability,segment_attribution,text,must

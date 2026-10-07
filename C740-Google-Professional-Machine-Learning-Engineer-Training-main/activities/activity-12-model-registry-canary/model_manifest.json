@@ -1,0 +1,7 @@
+{
+  "model_version": "churn-17",
+  "git_sha": "abc1234",
+  "data_version": "customers-2026-09-01",
+  "val_auc": 0.846,
+  "owner": "ml-platform"
+}

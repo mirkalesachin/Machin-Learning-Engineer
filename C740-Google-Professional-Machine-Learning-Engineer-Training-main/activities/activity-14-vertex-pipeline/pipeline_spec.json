@@ -1,0 +1,10 @@
+{
+  "order": [
+    "validate",
+    "transform",
+    "train",
+    "evaluate",
+    "deploy"
+  ],
+  "deploy_condition": "auc >= 0.82"
+}

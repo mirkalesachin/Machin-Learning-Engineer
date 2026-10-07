@@ -1,0 +1,14 @@
+{
+  "displayName": "pmle-training-budget",
+  "thresholdRules": [
+    {
+      "thresholdPercent": 0.5
+    },
+    {
+      "thresholdPercent": 0.9
+    },
+    {
+      "thresholdPercent": 1.0
+    }
+  ]
+}

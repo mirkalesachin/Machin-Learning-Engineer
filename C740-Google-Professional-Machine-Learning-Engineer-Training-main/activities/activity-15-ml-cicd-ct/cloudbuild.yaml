@@ -1,0 +1,10 @@
+steps:
+- name: python:3.11
+  entrypoint: python
+  args: ['-m','pytest']
+- name: gcr.io/cloud-builders/docker
+  args: ['build','-t','${_IMAGE}:${SHORT_SHA}','.']
+- name: python:3.11
+  entrypoint: python
+  args: ['release_gate.py','--auc','${_AUC}','--p95-ms','${_P95}','--fairness-gap','${_GAP}']
+images: ['${_IMAGE}:${SHORT_SHA}']

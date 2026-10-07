@@ -1,0 +1,5 @@
+trial,status,learning_rate,depth,dropout,val_auc,duration_min,cost
+1,SUCCEEDED,0.01,3,0.1,0.812,22,14
+2,SUCCEEDED,0.003,5,0.2,0.841,35,22
+3,FAILED,0.1,7,0.0,,9,7
+4,SUCCEEDED,0.001,6,0.3,0.846,55,33

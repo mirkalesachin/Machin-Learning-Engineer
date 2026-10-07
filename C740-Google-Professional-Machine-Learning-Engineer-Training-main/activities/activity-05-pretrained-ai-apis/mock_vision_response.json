@@ -1,0 +1,16 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "description": "shoe",
+          "score": 0.94
+        },
+        {
+          "description": "sportswear",
+          "score": 0.81
+        }
+      ]
+    }
+  ]
+}

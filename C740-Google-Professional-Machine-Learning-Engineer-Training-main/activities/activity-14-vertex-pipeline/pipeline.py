@@ -1,0 +1,2 @@
+import argparse,json,hashlib
+p=argparse.ArgumentParser(); p.add_argument('--compile'); a=p.parse_args(); spec={'pipelineInfo':{'name':'pmle-training'},'tasks':{'validate':{},'transform':{'dependentTasks':['validate']},'train':{'dependentTasks':['transform']},'evaluate':{'dependentTasks':['train']},'deploy':{'dependentTasks':['evaluate'],'triggerPolicy':{'condition':'auc >= 0.82'}}}}; json.dump(spec,open(a.compile,'w'),indent=2); print(hashlib.sha256(open(a.compile,'rb').read()).hexdigest())

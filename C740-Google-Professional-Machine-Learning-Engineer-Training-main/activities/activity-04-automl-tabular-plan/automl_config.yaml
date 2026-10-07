@@ -1,0 +1,6 @@
+target: target
+split_column: split
+optimization_metric: maximize-au-roc
+budget_milli_node_hours: 1000
+evaluation_slices: [region, channel]
+min_slice_rows: 100

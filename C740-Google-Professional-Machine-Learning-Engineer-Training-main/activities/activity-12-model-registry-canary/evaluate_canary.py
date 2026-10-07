@@ -1,0 +1,2 @@
+import csv,yaml,argparse
+p=argparse.ArgumentParser(); p.add_argument('--metrics'); p.add_argument('--config'); p.add_argument('--simulate-breach',action='store_true'); a=p.parse_args(); cfg=yaml.safe_load(open(a.config)); row=[r for r in csv.DictReader(open(a.metrics)) if r['version']=='candidate'][0]; p95=500 if a.simulate_breach else float(row['p95_ms']); ok=p95<=cfg['guardrails']['max_p95_ms'] and float(row['error_rate'])<=cfg['guardrails']['max_error_rate'] and float(row['auc'])>=cfg['guardrails']['min_auc']; print('PROMOTE' if ok else 'ROLLBACK',{'p95_ms':p95})

@@ -1,0 +1,15 @@
+{
+  "amount": {
+    "type": "number",
+    "min": 0,
+    "missing": "median_train"
+  },
+  "channel": {
+    "type": "category",
+    "unknown": "OTHER"
+  },
+  "country": {
+    "type": "category",
+    "unknown": "OTHER"
+  }
+}

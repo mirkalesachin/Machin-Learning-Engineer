@@ -1,0 +1,5 @@
+workers,examples_per_second,cost_per_hour
+1,420,1.0
+2,780,2.0
+4,1380,4.0
+8,2410,8.0

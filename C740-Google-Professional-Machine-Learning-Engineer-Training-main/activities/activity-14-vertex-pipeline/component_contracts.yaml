@@ -1,0 +1,5 @@
+validate: {inputs: [raw_data], outputs: [validated_data, validation_report]}
+transform: {inputs: [validated_data], outputs: [features, transform_artifact]}
+train: {inputs: [features, transform_artifact], outputs: [model]}
+evaluate: {inputs: [model, features], outputs: [metrics]}
+deploy: {inputs: [model, metrics], condition: 'metrics.auc >= 0.82'}

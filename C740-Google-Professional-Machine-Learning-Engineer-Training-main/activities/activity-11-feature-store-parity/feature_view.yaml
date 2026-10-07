@@ -1,0 +1,4 @@
+entity_id: customer_id
+source_timestamp: feature_time
+online_ttl_seconds: 3600
+features: [txn_count_1h, spend_7d, risk_score]

@@ -1,0 +1,5 @@
+id,feature,prediction,outcome,group,latency_ms
+1,0.1,0,0,A,120
+2,0.2,0,1,B,150
+3,0.7,1,1,A,170
+4,0.8,1,1,B,210

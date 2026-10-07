@@ -1,0 +1,5 @@
+workerPoolSpecs:
+- replicaCount: 1
+  machineSpec: {machineType: n1-standard-4}
+  containerSpec: {imageUri: REGION-docker.pkg.dev/PROJECT/train/pmle:v8}
+serviceAccount: pmle-training-sa@PROJECT.iam.gserviceaccount.com

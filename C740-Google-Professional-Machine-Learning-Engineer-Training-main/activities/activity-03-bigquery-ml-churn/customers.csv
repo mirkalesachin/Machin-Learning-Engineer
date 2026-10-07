@@ -1,0 +1,7 @@
+customer_id,tenure_months,monthly_spend,support_tickets,churned
+C001,4,82,5,1
+C002,36,140,0,0
+C003,12,64,3,1
+C004,52,180,1,0
+C005,8,74,4,1
+C006,28,120,1,0

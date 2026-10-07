@@ -1,0 +1,5 @@
+event_id,event_time,customer_id,amount,channel,country,label
+E1,2026-01-01T00:01:00Z,C1,24.50,web,SG,0
+E2,2026-01-01T00:02:00Z,C2,999.00,mobile,SG,1
+E3,2026-01-01T00:03:00Z,C3,,web,MY,0
+E4,2026-01-01T00:04:00Z,C2,-5.00,store,SG,1
